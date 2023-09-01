@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>𝑻𝑬𝑿𝑻 𝑹𝑬𝑷𝑬𝑨𝑻𝑬𝑹</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="TR-icon.ico">
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-9p/EzXeJ6jvMchMlLQ4Xwc5PQb4cBw/izF7+Z+P7wqLdN8k3jHpy3u5Rd8+Ry0AjlJ5YzXwWQo7Q+8ZL7RcG8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta thhp-equiv="X-UA-Compatible" content="IE=edge ,chrome=1">
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div>
+    <a style="text-decoration: none; color: rgb(0, 0, 0);" href="abme.html" >
+    <div title="About Me" id="user-icon" >
+      
+      <i  class="fa fa-user"></i>
+      </div>
+    </a>
+  </div>
+  <br><br>
+    <div class="container">
+        <h1>𝕋𝔼𝕏𝕋 ℝ𝔼ℙ𝔼𝔸𝕋𝔼ℝ</h1>
+        <input  type="text" id="text-input" placeholder="Enter The Text Here" required>
+        <input title="Number of Repeated" type="number"  min="1" value="8"  id="repeat-input" placeholder= "Enter The Number" required>
+        <br>
+        <label style="color:lightgreen;" id="space" for="space-radio">Separator</label>
+        <input type="radio" name="separator" id="space-radio" checked>
+        <label id="newline" for="newline-radio">New Line</label>
+        <input type="radio" name="separator" id="newline-radio">
+        <label id="no-separator" for="no-separator-radio">No Separator</label>
+        <input type="radio" name="separator" id="no-separator-radio">
+        
+        <br>
+        <br>
+        <button onclick="repeatText(); playClickSound();">Repeat Text</button>
+        <br>
+        <div id="novalueDiv"></div>
+        <textarea id="output" rows="5" cols="50"  disabled></textarea>
+        <br>
+        <button onclick="copyText(); playClickSound();" id="copyButton">Copy Text</button>
+      </div>
+      <audio id="clickSound">
+        <source src="button-click.mp3" type="audio/mpeg">
+      
+        </audio>
+  <script src="script.js"></script>
+</body>
+</html>

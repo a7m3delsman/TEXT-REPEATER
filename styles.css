@@ -1,0 +1,148 @@
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  body{
+    background-image: url("bgimg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    color: gold;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px yellow;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: cornsilk;
+    color: rgb(0, 0, 0);
+    display: inline;
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid #1f1e1e;
+  }
+  
+  label {
+    color: rgb(209, 27, 27);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    padding: 15px;
+   margin-right: -5px;
+    display: inline;
+    text-shadow: 5px 5px 10px black;
+
+  }
+ 
+  button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #007904;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  }
+  
+  button:hover {
+    background-color: #8f8f8f;
+    color: black;
+   
+  }
+  
+  textarea {
+    color: antiquewhite;
+    display: none;
+    padding: 10px;
+    width: 370px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    resize: none;
+  }
+  
+  #copyButton {
+   
+    text-decoration: none;
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #000000;
+    color: aqua;
+    border: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    border: 2px solid aqua; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(0, 225, 255);
+  }
+  
+  #copyButton:hover {
+    background-color:aqua;
+    color:black;
+  
+  }
+  #user-icon {
+    position: absolute;
+      background-color:cornsilk;
+      width: 50px;
+     
+      height: 50px;
+      margin-left: 20px;
+      margin-top: 20px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 0 16px rgb(29, 231, 198);
+  }
+  
+  #user-icon:hover {
+      background-color: aqua;
+      color: #fff;
+  }
+  
+  #user-icon:active{
+      background-color: #d9d9d9;
+      transform: scale(0.95);
+    }
+   
+    button:active {
+      background-color: #d9d9d9;
+      transform: scale(0.95);
+    }
+    
+    a:active {
+      background-color: #d9d9d9;
+      transform: scale(0.95);
+    }
+    a.delete {
+      background-color: #ff5d5d;
+      color: #fff;
+      box-shadow: 0 2px 6px rgba(255, 93, 93, 0.4);
+    }
+    
+    a.delete:hover {
+      background-color: #ff7373;
+    }
+    
+    a.delete:active {
+      background-color: #dd0000;
+      transform: scale(0.95);
+    }
+    
