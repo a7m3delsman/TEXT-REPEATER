@@ -58,15 +58,23 @@ function repeatText() {
   }
 
   function copyText() {
-    var outputTextarea = document.getElementById("output");
-    outputTextarea.select();
-    document.execCommand("copy");
-    let copyButton = document.getElementById("copyButton");
-copyButton.textContent = "Copied!";
-setTimeout(function() {
-  copyButton.textContent = "Copy Text";
-}, 2000);
-  }
+  var textToCopy = document.getElementById("output").value;
+
+  navigator.clipboard.writeText(textToCopy)
+    .then(function() {
+      // تم نسخ النص بنجاح
+      console.log("Text copied to clipboard");
+      var copyButton = document.getElementById("copyButton");
+      copyButton.textContent = "Copied!";
+      setTimeout(function() {
+        copyButton.textContent = "Copy Text";
+      }, 1500);
+    })
+    .catch(function(error) {
+      // حدث خطأ أثناء النسخ
+      console.error("An error occurred while copying ", error);
+    });
+}
   // استدعاء الدالة عند تغيير حالة أي radio button
 var radioButtons = document.getElementsByName("separator");
 for (var i = 0; i < radioButtons.length; i++) {
@@ -124,7 +132,7 @@ function nohidetextarea(textareaId) {
   }
    var audio = new Audio('button-click.mp3');
   function playClickSound() {
-      clickSound.currentTime = 0;
-      clickSound.play();
+    audio.currentTime = 0;
+      audio.play();
     }
     
